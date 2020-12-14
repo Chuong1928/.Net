@@ -1,8 +1,0 @@
-F:\Nam4_DHKH\Net_Framwork\BaiTap\ProfileStudent\ProfileStudent\bin\Debug\ProfileStudent.exe.config
-F:\Nam4_DHKH\Net_Framwork\BaiTap\ProfileStudent\ProfileStudent\bin\Debug\ProfileStudent.exe
-F:\Nam4_DHKH\Net_Framwork\BaiTap\ProfileStudent\ProfileStudent\bin\Debug\ProfileStudent.pdb
-F:\Nam4_DHKH\Net_Framwork\BaiTap\ProfileStudent\ProfileStudent\obj\Debug\ProfileStudent.ThongTinSV.resources
-F:\Nam4_DHKH\Net_Framwork\BaiTap\ProfileStudent\ProfileStudent\obj\Debug\ProfileStudent.Properties.Resources.resources
-F:\Nam4_DHKH\Net_Framwork\BaiTap\ProfileStudent\ProfileStudent\obj\Debug\ProfileStudent.csproj.GenerateResource.Cache
-F:\Nam4_DHKH\Net_Framwork\BaiTap\ProfileStudent\ProfileStudent\obj\Debug\ProfileStudent.exe
-F:\Nam4_DHKH\Net_Framwork\BaiTap\ProfileStudent\ProfileStudent\obj\Debug\ProfileStudent.pdb
