@@ -30,34 +30,34 @@
         {
             this.pickavt = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.IDStudent = new System.Windows.Forms.TextBox();
+            this.rdbOthersexual = new System.Windows.Forms.RadioButton();
+            this.rdbFeMale = new System.Windows.Forms.RadioButton();
+            this.rdbMale = new System.Windows.Forms.RadioButton();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtPOB = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtBirthday = new System.Windows.Forms.DateTimePicker();
+            this.txtLastName = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.txtFirstName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtLastName = new System.Windows.Forms.TextBox();
-            this.txtBirthday = new System.Windows.Forms.DateTimePicker();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtPOB = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.rdbMale = new System.Windows.Forms.RadioButton();
-            this.rdbFeMale = new System.Windows.Forms.RadioButton();
-            this.rdbOthersexual = new System.Windows.Forms.RadioButton();
+            this.IDStudent = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             this.girdHistory = new System.Windows.Forms.DataGridView();
             this.Lớp = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Trường = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pickavt)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.girdHistory)).BeginInit();
+            this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // pickavt
@@ -96,22 +96,104 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "ThongTinCoBan";
             // 
-            // label1
+            // rdbOthersexual
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(7, 20);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(64, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "MaSinhVien";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.rdbOthersexual.AutoSize = true;
+            this.rdbOthersexual.Location = new System.Drawing.Point(256, 164);
+            this.rdbOthersexual.Name = "rdbOthersexual";
+            this.rdbOthersexual.Size = new System.Drawing.Size(39, 17);
+            this.rdbOthersexual.TabIndex = 13;
+            this.rdbOthersexual.TabStop = true;
+            this.rdbOthersexual.Text = "3D";
+            this.rdbOthersexual.UseVisualStyleBackColor = true;
             // 
-            // IDStudent
+            // rdbFeMale
             // 
-            this.IDStudent.Location = new System.Drawing.Point(89, 17);
-            this.IDStudent.Name = "IDStudent";
-            this.IDStudent.Size = new System.Drawing.Size(200, 20);
-            this.IDStudent.TabIndex = 1;
+            this.rdbFeMale.AutoSize = true;
+            this.rdbFeMale.Location = new System.Drawing.Point(172, 167);
+            this.rdbFeMale.Name = "rdbFeMale";
+            this.rdbFeMale.Size = new System.Drawing.Size(39, 17);
+            this.rdbFeMale.TabIndex = 12;
+            this.rdbFeMale.TabStop = true;
+            this.rdbFeMale.Text = "Nu";
+            this.rdbFeMale.UseVisualStyleBackColor = true;
+            // 
+            // rdbMale
+            // 
+            this.rdbMale.AutoSize = true;
+            this.rdbMale.Location = new System.Drawing.Point(89, 164);
+            this.rdbMale.Name = "rdbMale";
+            this.rdbMale.Size = new System.Drawing.Size(47, 17);
+            this.rdbMale.TabIndex = 11;
+            this.rdbMale.TabStop = true;
+            this.rdbMale.Text = "Nam";
+            this.rdbMale.UseVisualStyleBackColor = true;
+            this.rdbMale.CheckedChanged += new System.EventHandler(this.rdbMale_CheckedChanged);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(7, 164);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(46, 13);
+            this.label6.TabIndex = 10;
+            this.label6.Text = "GioiTinh";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
+            // 
+            // txtPOB
+            // 
+            this.txtPOB.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtPOB.Location = new System.Drawing.Point(89, 105);
+            this.txtPOB.Multiline = true;
+            this.txtPOB.Name = "txtPOB";
+            this.txtPOB.Size = new System.Drawing.Size(426, 46);
+            this.txtPOB.TabIndex = 9;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(7, 108);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(44, 13);
+            this.label5.TabIndex = 8;
+            this.label5.Text = "NoiSinh";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(7, 76);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(53, 13);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "NgaySinh";
+            // 
+            // txtBirthday
+            // 
+            this.txtBirthday.CustomFormat = "dd/mm/yyyy";
+            this.txtBirthday.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.txtBirthday.Location = new System.Drawing.Point(89, 70);
+            this.txtBirthday.Name = "txtBirthday";
+            this.txtBirthday.Size = new System.Drawing.Size(200, 20);
+            this.txtBirthday.TabIndex = 6;
+            // 
+            // txtLastName
+            // 
+            this.txtLastName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtLastName.Location = new System.Drawing.Point(370, 43);
+            this.txtLastName.Name = "txtLastName";
+            this.txtLastName.Size = new System.Drawing.Size(143, 20);
+            this.txtLastName.TabIndex = 5;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(313, 46);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(26, 13);
+            this.label4.TabIndex = 4;
+            this.label4.Text = "Ten";
             // 
             // txtFirstName
             // 
@@ -129,103 +211,22 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "HoDem";
             // 
-            // label4
+            // IDStudent
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(313, 46);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(26, 13);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "Ten";
+            this.IDStudent.Location = new System.Drawing.Point(89, 17);
+            this.IDStudent.Name = "IDStudent";
+            this.IDStudent.Size = new System.Drawing.Size(200, 20);
+            this.IDStudent.TabIndex = 1;
             // 
-            // txtLastName
+            // label1
             // 
-            this.txtLastName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtLastName.Location = new System.Drawing.Point(370, 43);
-            this.txtLastName.Name = "txtLastName";
-            this.txtLastName.Size = new System.Drawing.Size(143, 20);
-            this.txtLastName.TabIndex = 5;
-            // 
-            // txtBirthday
-            // 
-            this.txtBirthday.CustomFormat = "dd/mm/yyyy";
-            this.txtBirthday.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.txtBirthday.Location = new System.Drawing.Point(89, 70);
-            this.txtBirthday.Name = "txtBirthday";
-            this.txtBirthday.Size = new System.Drawing.Size(200, 20);
-            this.txtBirthday.TabIndex = 6;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(7, 76);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(53, 13);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "NgaySinh";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(7, 108);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(44, 13);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "NoiSinh";
-            // 
-            // txtPOB
-            // 
-            this.txtPOB.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtPOB.Location = new System.Drawing.Point(89, 105);
-            this.txtPOB.Multiline = true;
-            this.txtPOB.Name = "txtPOB";
-            this.txtPOB.Size = new System.Drawing.Size(426, 46);
-            this.txtPOB.TabIndex = 9;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(7, 164);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(46, 13);
-            this.label6.TabIndex = 10;
-            this.label6.Text = "GioiTinh";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
-            // 
-            // rdbMale
-            // 
-            this.rdbMale.AutoSize = true;
-            this.rdbMale.Location = new System.Drawing.Point(89, 164);
-            this.rdbMale.Name = "rdbMale";
-            this.rdbMale.Size = new System.Drawing.Size(47, 17);
-            this.rdbMale.TabIndex = 11;
-            this.rdbMale.TabStop = true;
-            this.rdbMale.Text = "Nam";
-            this.rdbMale.UseVisualStyleBackColor = true;
-            // 
-            // rdbFeMale
-            // 
-            this.rdbFeMale.AutoSize = true;
-            this.rdbFeMale.Location = new System.Drawing.Point(171, 164);
-            this.rdbFeMale.Name = "rdbFeMale";
-            this.rdbFeMale.Size = new System.Drawing.Size(39, 17);
-            this.rdbFeMale.TabIndex = 12;
-            this.rdbFeMale.TabStop = true;
-            this.rdbFeMale.Text = "Nu";
-            this.rdbFeMale.UseVisualStyleBackColor = true;
-            // 
-            // rdbOthersexual
-            // 
-            this.rdbOthersexual.AutoSize = true;
-            this.rdbOthersexual.Location = new System.Drawing.Point(256, 164);
-            this.rdbOthersexual.Name = "rdbOthersexual";
-            this.rdbOthersexual.Size = new System.Drawing.Size(39, 17);
-            this.rdbOthersexual.TabIndex = 13;
-            this.rdbOthersexual.TabStop = true;
-            this.rdbOthersexual.Text = "3D";
-            this.rdbOthersexual.UseVisualStyleBackColor = true;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(7, 20);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(64, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "MaSinhVien";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // panel1
             // 
@@ -238,23 +239,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(648, 227);
             this.panel1.TabIndex = 2;
-            // 
-            // toolStrip1
-            // 
-            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripLabel1});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
-            this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(648, 25);
-            this.toolStrip1.TabIndex = 0;
-            this.toolStrip1.Text = "toolStrip1";
-            // 
-            // toolStripLabel1
-            // 
-            this.toolStripLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(99, 22);
-            this.toolStripLabel1.Text = "QuaTrinhHocTap";
             // 
             // girdHistory
             // 
@@ -305,6 +289,23 @@
             this.Column3.HeaderText = "Hạnh kiểm";
             this.Column3.Name = "Column3";
             // 
+            // toolStrip1
+            // 
+            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripLabel1});
+            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
+            this.toolStrip1.Name = "toolStrip1";
+            this.toolStrip1.Size = new System.Drawing.Size(648, 25);
+            this.toolStrip1.TabIndex = 0;
+            this.toolStrip1.Text = "toolStrip1";
+            // 
+            // toolStripLabel1
+            // 
+            this.toolStripLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.toolStripLabel1.Name = "toolStripLabel1";
+            this.toolStripLabel1.Size = new System.Drawing.Size(99, 22);
+            this.toolStripLabel1.Text = "QuaTrinhHocTap";
+            // 
             // ThongTinSV
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -320,9 +321,9 @@
             this.groupBox1.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.girdHistory)).EndInit();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.girdHistory)).EndInit();
             this.ResumeLayout(false);
 
         }

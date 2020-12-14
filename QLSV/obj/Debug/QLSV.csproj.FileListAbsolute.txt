@@ -1,5 +1,4 @@
 F:\Nam4_DHKH\Net_Framwork\BaiTap\ProfileStudent\QLSV\bin\Debug\QLSV.exe.config
-F:\Nam4_DHKH\Net_Framwork\BaiTap\ProfileStudent\QLSV\obj\Debug\QLSV.csprojResolveAssemblyReference.cache
 F:\Nam4_DHKH\Net_Framwork\BaiTap\ProfileStudent\QLSV\obj\Debug\QLSV.Properties.Resources.resources
 F:\Nam4_DHKH\Net_Framwork\BaiTap\ProfileStudent\QLSV\obj\Debug\QLSV.csproj.GenerateResource.Cache
 F:\Nam4_DHKH\Net_Framwork\BaiTap\ProfileStudent\QLSV\bin\Debug\QLSV.exe

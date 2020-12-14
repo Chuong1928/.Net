@@ -1,0 +1,15 @@
+F:\Nam4_DHKH\Net_Framwork\BaiTap\ProfileStudent\AppQLSV\bin\Debug\AppQLSV.exe.config
+F:\Nam4_DHKH\Net_Framwork\BaiTap\ProfileStudent\AppQLSV\bin\Debug\AppQLSV.exe
+F:\Nam4_DHKH\Net_Framwork\BaiTap\ProfileStudent\AppQLSV\bin\Debug\AppQLSV.pdb
+F:\Nam4_DHKH\Net_Framwork\BaiTap\ProfileStudent\AppQLSV\obj\Debug\AppQLSV.Form1.resources
+F:\Nam4_DHKH\Net_Framwork\BaiTap\ProfileStudent\AppQLSV\obj\Debug\AppQLSV.GUI.ThemLop.resources
+F:\Nam4_DHKH\Net_Framwork\BaiTap\ProfileStudent\AppQLSV\obj\Debug\AppQLSV.Properties.Resources.resources
+F:\Nam4_DHKH\Net_Framwork\BaiTap\ProfileStudent\AppQLSV\obj\Debug\AppQLSV.csproj.GenerateResource.Cache
+F:\Nam4_DHKH\Net_Framwork\BaiTap\ProfileStudent\AppQLSV\obj\Debug\AppQLSV.exe
+F:\Nam4_DHKH\Net_Framwork\BaiTap\ProfileStudent\AppQLSV\obj\Debug\AppQLSV.pdb
+F:\Nam4_DHKH\Net_Framwork\BaiTap\ProfileStudent\AppQLSV\obj\Debug\AppQLSV.csprojResolveAssemblyReference.cache
+F:\Nam4_DHKH\Net_Framwork\BaiTap\ProfileStudent\AppQLSV\bin\Debug\EntityFramework.dll
+F:\Nam4_DHKH\Net_Framwork\BaiTap\ProfileStudent\AppQLSV\bin\Debug\EntityFramework.SqlServer.dll
+F:\Nam4_DHKH\Net_Framwork\BaiTap\ProfileStudent\AppQLSV\bin\Debug\EntityFramework.xml
+F:\Nam4_DHKH\Net_Framwork\BaiTap\ProfileStudent\AppQLSV\bin\Debug\EntityFramework.SqlServer.xml
+F:\Nam4_DHKH\Net_Framwork\BaiTap\ProfileStudent\AppQLSV\obj\Debug\AppQLSV.GUI.ThemSinhVien.resources

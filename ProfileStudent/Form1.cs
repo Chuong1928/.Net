@@ -68,5 +68,9 @@ namespace ProfileStudent
             }
         }
 
+        private void rdbMale_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
