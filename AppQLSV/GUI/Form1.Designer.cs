@@ -44,12 +44,6 @@
             this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.girdsinhvien = new System.Windows.Forms.DataGridView();
-            this.MaSinhVien = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Ho = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NgaySinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NoiSinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.GioiTinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.toolStrip2 = new System.Windows.Forms.ToolStrip();
             this.toolStripLabel5 = new System.Windows.Forms.ToolStripLabel();
             this.btnxoasinhvien = new System.Windows.Forms.ToolStripLabel();
@@ -60,6 +54,12 @@
             this.toolStripButton6 = new System.Windows.Forms.ToolStripButton();
             this.bdslophoc = new System.Windows.Forms.BindingSource(this.components);
             this.bdssinhvien = new System.Windows.Forms.BindingSource(this.components);
+            this.MaSinhVien = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Ho = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NgaySinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NoiSinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GioiTinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panelleft.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.girdlophoc)).BeginInit();
             this.toolStrip1.SuspendLayout();
@@ -208,42 +208,6 @@
             this.girdsinhvien.Size = new System.Drawing.Size(642, 287);
             this.girdsinhvien.TabIndex = 2;
             // 
-            // MaSinhVien
-            // 
-            this.MaSinhVien.DataPropertyName = "ID";
-            this.MaSinhVien.HeaderText = "Mã Sinh Viên";
-            this.MaSinhVien.Name = "MaSinhVien";
-            // 
-            // Ho
-            // 
-            this.Ho.DataPropertyName = "FirstName";
-            this.Ho.HeaderText = "Họ ";
-            this.Ho.Name = "Ho";
-            // 
-            // Column1
-            // 
-            this.Column1.DataPropertyName = "LastName";
-            this.Column1.HeaderText = "Tên";
-            this.Column1.Name = "Column1";
-            // 
-            // NgaySinh
-            // 
-            this.NgaySinh.DataPropertyName = "DateOfBirth";
-            this.NgaySinh.HeaderText = "Ngày Sinh";
-            this.NgaySinh.Name = "NgaySinh";
-            // 
-            // NoiSinh
-            // 
-            this.NoiSinh.DataPropertyName = "PlaceOfBirth";
-            this.NoiSinh.HeaderText = "Nơi Sinh";
-            this.NoiSinh.Name = "NoiSinh";
-            // 
-            // GioiTinh
-            // 
-            this.GioiTinh.DataPropertyName = "Gender";
-            this.GioiTinh.HeaderText = "giới tính";
-            this.GioiTinh.Name = "GioiTinh";
-            // 
             // toolStrip2
             // 
             this.toolStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -327,6 +291,42 @@
             // bdssinhvien
             // 
             this.bdssinhvien.CurrentChanged += new System.EventHandler(this.bdssinhvien_CurrentChanged);
+            // 
+            // MaSinhVien
+            // 
+            this.MaSinhVien.DataPropertyName = "ID";
+            this.MaSinhVien.HeaderText = "Mã Sinh Viên";
+            this.MaSinhVien.Name = "MaSinhVien";
+            // 
+            // Ho
+            // 
+            this.Ho.DataPropertyName = "FirstName";
+            this.Ho.HeaderText = "Họ ";
+            this.Ho.Name = "Ho";
+            // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "LastName";
+            this.Column1.HeaderText = "Tên";
+            this.Column1.Name = "Column1";
+            // 
+            // NgaySinh
+            // 
+            this.NgaySinh.DataPropertyName = "DateOfBirth";
+            this.NgaySinh.HeaderText = "Ngày Sinh";
+            this.NgaySinh.Name = "NgaySinh";
+            // 
+            // NoiSinh
+            // 
+            this.NoiSinh.DataPropertyName = "PlaceOfBirth";
+            this.NoiSinh.HeaderText = "Nơi Sinh";
+            this.NoiSinh.Name = "NoiSinh";
+            // 
+            // GioiTinh
+            // 
+            this.GioiTinh.DataPropertyName = "_g";
+            this.GioiTinh.HeaderText = "giới tính";
+            this.GioiTinh.Name = "GioiTinh";
             // 
             // Form1
             // 

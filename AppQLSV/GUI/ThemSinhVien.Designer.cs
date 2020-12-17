@@ -179,9 +179,9 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(345, 137);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(43, 13);
+            this.label6.Size = new System.Drawing.Size(25, 13);
             this.label6.TabIndex = 14;
-            this.label6.Text = "Mã Lớp";
+            this.label6.Text = "Lớp";
             // 
             // cbMalop
             // 
@@ -190,7 +190,7 @@
             this.cbMalop.Name = "cbMalop";
             this.cbMalop.Size = new System.Drawing.Size(165, 21);
             this.cbMalop.TabIndex = 15;
-            this.cbMalop.Text = "Chọn mã lớp";
+            this.cbMalop.Text = "Chọn lớp";
             this.cbMalop.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // ThemSinhVien

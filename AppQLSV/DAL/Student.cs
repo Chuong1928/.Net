@@ -30,6 +30,20 @@ namespace AppQLSV.DAL
         public string IDClassRoom { get; set; }
 
         public virtual Classroom Classroom { get; set; }
+        public string _g {
+            get
+            {
+                if (Gender == 0)
+                {
+                    return "Nam";
+                }
+                else
+                {
+                    return "Nu";
+                }
+            }
+        }
+
     }
     public enum Sexual
     {

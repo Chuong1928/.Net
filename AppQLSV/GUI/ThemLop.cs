@@ -35,10 +35,11 @@ namespace AppQLSV.GUI
             var phonghoc = textphonghoc.Text;
             if (lophoc == null)
             {
-
+                System.Random rd = new Random();
                 var lop = new Classroom
                 {
-                    ID = Guid.NewGuid().ToString(),
+                    //ID = Guid.NewGuid().ToString(),
+                    ID = "ML00" + rd.Next(1, 100000),
                     Name = tenlop,
                     Room = phonghoc
                 };

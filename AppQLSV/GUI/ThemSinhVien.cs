@@ -74,10 +74,11 @@ namespace AppQLSV.GUI
 
             if (sinhvien == null)
             {
-
+                System.Random rd = new Random();
                 var sv = new Student
                 {
-                    ID = Guid.NewGuid().ToString(),
+                    //ID = Guid.NewGuid().ToString(),
+                    ID = "17T102" + rd.Next(1, 100000),
                     FirstName = firstname,
                     LastName = lastname,
                     DateOfBirth = dob,
