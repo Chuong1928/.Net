@@ -43,6 +43,7 @@ namespace AppQLSV.DAL
                 }
             }
         }
+        
 
     }
     public enum Sexual

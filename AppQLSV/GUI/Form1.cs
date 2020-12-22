@@ -26,7 +26,18 @@ namespace AppQLSV
         void LoadDanhSachLopHoc()
         {
             APPQLSVDBContext db = new APPQLSVDBContext();
-            var ls = db.Classrooms.OrderBy(e=>e.Name).ToList();
+            var ls = db.Classrooms.Select(e => new ClassRoomViewModel
+            {
+                ID = e.ID,
+                Name= e.Name,
+                Room = e.Room,
+                TotalStudent = e.Students.Count,
+                TotalFemale = e.Students.Where(t=>t.Gender == 1).Count(),
+                TotalMale = e.Students.Where(t => t.Gender == 0).Count(),
+
+
+
+            }).OrderBy(e=>e.Name).ToList();
             bdslophoc.DataSource = ls;
             girdlophoc.DataSource = bdslophoc;
             
@@ -80,7 +91,7 @@ namespace AppQLSV
 
         private void bdslophoc_CurrentChanged(object sender, EventArgs e)
         {
-            var lopdangchon = bdslophoc.Current as Classroom;
+            var lopdangchon = bdslophoc.Current as ClassRoomViewModel;
             if (lopdangchon != null)
             {
                 var db = new APPQLSVDBContext();
@@ -139,6 +150,11 @@ namespace AppQLSV
 
                 }
             }
+        }
+
+        private void girdlophoc_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

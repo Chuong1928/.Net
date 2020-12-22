@@ -32,8 +32,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panelleft = new System.Windows.Forms.Panel();
             this.girdlophoc = new System.Windows.Forms.DataGridView();
-            this.TenLop = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PhongHoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             this.btnxoalop = new System.Windows.Forms.ToolStripLabel();
@@ -44,6 +42,12 @@
             this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.girdsinhvien = new System.Windows.Forms.DataGridView();
+            this.MaSinhVien = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Ho = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NgaySinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NoiSinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GioiTinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.toolStrip2 = new System.Windows.Forms.ToolStrip();
             this.toolStripLabel5 = new System.Windows.Forms.ToolStripLabel();
             this.btnxoasinhvien = new System.Windows.Forms.ToolStripLabel();
@@ -54,12 +58,11 @@
             this.toolStripButton6 = new System.Windows.Forms.ToolStripButton();
             this.bdslophoc = new System.Windows.Forms.BindingSource(this.components);
             this.bdssinhvien = new System.Windows.Forms.BindingSource(this.components);
-            this.MaSinhVien = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Ho = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NgaySinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NoiSinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.GioiTinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenLop = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PhongHoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TotalStudent = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SinhVienNam = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SinhVienNu = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panelleft.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.girdlophoc)).BeginInit();
             this.toolStrip1.SuspendLayout();
@@ -77,7 +80,7 @@
             this.panelleft.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelleft.Location = new System.Drawing.Point(0, 0);
             this.panelleft.Name = "panelleft";
-            this.panelleft.Size = new System.Drawing.Size(309, 312);
+            this.panelleft.Size = new System.Drawing.Size(522, 359);
             this.panelleft.TabIndex = 0;
             // 
             // girdlophoc
@@ -85,26 +88,16 @@
             this.girdlophoc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.girdlophoc.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.TenLop,
-            this.PhongHoc});
+            this.PhongHoc,
+            this.TotalStudent,
+            this.SinhVienNam,
+            this.SinhVienNu});
             this.girdlophoc.Dock = System.Windows.Forms.DockStyle.Fill;
             this.girdlophoc.Location = new System.Drawing.Point(0, 25);
             this.girdlophoc.Name = "girdlophoc";
-            this.girdlophoc.Size = new System.Drawing.Size(309, 287);
+            this.girdlophoc.Size = new System.Drawing.Size(522, 334);
             this.girdlophoc.TabIndex = 0;
-            // 
-            // TenLop
-            // 
-            this.TenLop.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.TenLop.DataPropertyName = "Name";
-            this.TenLop.HeaderText = "Tên Lớp";
-            this.TenLop.Name = "TenLop";
-            // 
-            // PhongHoc
-            // 
-            this.PhongHoc.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.PhongHoc.DataPropertyName = "Room";
-            this.PhongHoc.HeaderText = "Phòng Học";
-            this.PhongHoc.Name = "PhongHoc";
+            this.girdlophoc.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.girdlophoc_CellContentClick);
             // 
             // toolStrip1
             // 
@@ -118,7 +111,7 @@
             this.toolStripButton3});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(309, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(522, 25);
             this.toolStrip1.TabIndex = 1;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -187,9 +180,9 @@
             this.panel1.Controls.Add(this.girdsinhvien);
             this.panel1.Controls.Add(this.toolStrip2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(309, 0);
+            this.panel1.Location = new System.Drawing.Point(522, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(642, 312);
+            this.panel1.Size = new System.Drawing.Size(626, 359);
             this.panel1.TabIndex = 1;
             // 
             // girdsinhvien
@@ -205,8 +198,44 @@
             this.girdsinhvien.Dock = System.Windows.Forms.DockStyle.Fill;
             this.girdsinhvien.Location = new System.Drawing.Point(0, 25);
             this.girdsinhvien.Name = "girdsinhvien";
-            this.girdsinhvien.Size = new System.Drawing.Size(642, 287);
+            this.girdsinhvien.Size = new System.Drawing.Size(626, 334);
             this.girdsinhvien.TabIndex = 2;
+            // 
+            // MaSinhVien
+            // 
+            this.MaSinhVien.DataPropertyName = "ID";
+            this.MaSinhVien.HeaderText = "Mã Sinh Viên";
+            this.MaSinhVien.Name = "MaSinhVien";
+            // 
+            // Ho
+            // 
+            this.Ho.DataPropertyName = "FirstName";
+            this.Ho.HeaderText = "Họ ";
+            this.Ho.Name = "Ho";
+            // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "LastName";
+            this.Column1.HeaderText = "Tên";
+            this.Column1.Name = "Column1";
+            // 
+            // NgaySinh
+            // 
+            this.NgaySinh.DataPropertyName = "DateOfBirth";
+            this.NgaySinh.HeaderText = "Ngày Sinh";
+            this.NgaySinh.Name = "NgaySinh";
+            // 
+            // NoiSinh
+            // 
+            this.NoiSinh.DataPropertyName = "PlaceOfBirth";
+            this.NoiSinh.HeaderText = "Nơi Sinh";
+            this.NoiSinh.Name = "NoiSinh";
+            // 
+            // GioiTinh
+            // 
+            this.GioiTinh.DataPropertyName = "_g";
+            this.GioiTinh.HeaderText = "giới tính";
+            this.GioiTinh.Name = "GioiTinh";
             // 
             // toolStrip2
             // 
@@ -220,7 +249,7 @@
             this.toolStripButton6});
             this.toolStrip2.Location = new System.Drawing.Point(0, 0);
             this.toolStrip2.Name = "toolStrip2";
-            this.toolStrip2.Size = new System.Drawing.Size(642, 25);
+            this.toolStrip2.Size = new System.Drawing.Size(626, 25);
             this.toolStrip2.TabIndex = 1;
             this.toolStrip2.Text = "toolStrip2";
             // 
@@ -292,47 +321,43 @@
             // 
             this.bdssinhvien.CurrentChanged += new System.EventHandler(this.bdssinhvien_CurrentChanged);
             // 
-            // MaSinhVien
+            // TenLop
             // 
-            this.MaSinhVien.DataPropertyName = "ID";
-            this.MaSinhVien.HeaderText = "Mã Sinh Viên";
-            this.MaSinhVien.Name = "MaSinhVien";
+            this.TenLop.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.TenLop.DataPropertyName = "Name";
+            this.TenLop.HeaderText = "Tên Lớp";
+            this.TenLop.Name = "TenLop";
             // 
-            // Ho
+            // PhongHoc
             // 
-            this.Ho.DataPropertyName = "FirstName";
-            this.Ho.HeaderText = "Họ ";
-            this.Ho.Name = "Ho";
+            this.PhongHoc.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.PhongHoc.DataPropertyName = "Room";
+            this.PhongHoc.HeaderText = "Phòng Học";
+            this.PhongHoc.Name = "PhongHoc";
             // 
-            // Column1
+            // TotalStudent
             // 
-            this.Column1.DataPropertyName = "LastName";
-            this.Column1.HeaderText = "Tên";
-            this.Column1.Name = "Column1";
+            this.TotalStudent.DataPropertyName = "TotalStudent";
+            this.TotalStudent.HeaderText = "Sĩ Số";
+            this.TotalStudent.Name = "TotalStudent";
             // 
-            // NgaySinh
+            // SinhVienNam
             // 
-            this.NgaySinh.DataPropertyName = "DateOfBirth";
-            this.NgaySinh.HeaderText = "Ngày Sinh";
-            this.NgaySinh.Name = "NgaySinh";
+            this.SinhVienNam.DataPropertyName = "TotalMale";
+            this.SinhVienNam.HeaderText = "Số SV Nam";
+            this.SinhVienNam.Name = "SinhVienNam";
             // 
-            // NoiSinh
+            // SinhVienNu
             // 
-            this.NoiSinh.DataPropertyName = "PlaceOfBirth";
-            this.NoiSinh.HeaderText = "Nơi Sinh";
-            this.NoiSinh.Name = "NoiSinh";
-            // 
-            // GioiTinh
-            // 
-            this.GioiTinh.DataPropertyName = "_g";
-            this.GioiTinh.HeaderText = "giới tính";
-            this.GioiTinh.Name = "GioiTinh";
+            this.SinhVienNu.DataPropertyName = "TotalFemale";
+            this.SinhVienNu.HeaderText = "Số SV Nữ";
+            this.SinhVienNu.Name = "SinhVienNu";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(951, 312);
+            this.ClientSize = new System.Drawing.Size(1148, 359);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelleft);
             this.Name = "Form1";
@@ -376,8 +401,6 @@
         private System.Windows.Forms.ToolStripButton toolStripButton6;
         private System.Windows.Forms.ToolStripLabel btnxoasinhvien;
         private System.Windows.Forms.BindingSource bdslophoc;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TenLop;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PhongHoc;
         private System.Windows.Forms.BindingSource bdssinhvien;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaSinhVien;
         private System.Windows.Forms.DataGridViewTextBoxColumn Ho;
@@ -385,6 +408,11 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn NgaySinh;
         private System.Windows.Forms.DataGridViewTextBoxColumn NoiSinh;
         private System.Windows.Forms.DataGridViewTextBoxColumn GioiTinh;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TenLop;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PhongHoc;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TotalStudent;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SinhVienNam;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SinhVienNu;
     }
 }
 
